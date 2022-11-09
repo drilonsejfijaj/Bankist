@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f1f1f1;
+  height: 100vh;
+  padding: 2rem;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.header {
+  /* padding: 1rem 1.6rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.bankist-logo {
+  background-color: inherit;
+  height: 5.25rem;
+}
+
+.text {
+  /* padding-left: 1rem; */
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.login {
+  display: flex;
+  /* gap: 1.4rem; */
+}
+
+.test-form {
+  display: flex;
+}
+.user-data {
+  border: none;
+  text-align: center;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.8rem;
+  margin-right: 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+.user-data:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+.user-data::placeholder {
+  color: #bbb;
+}
+.btn {
+  background-color: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: inherit;
+  transition: all 3s;
+}
+
+.main {
+  position: relative;
+  max-width: 100rem;
+  height: 50rem;
+  opacity: 0;
+  margin: 4.2rem auto;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: auto repeat(3, 1fr) auto;
+  gap: 2rem;
+  transition: all 1s;
+}
+
+.main-header {
+  height: 9rem;
+  background-color: inherit;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  padding-top: 1rem;
+  line-height: 3rem;
+  margin-bottom: 1.2rem;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.4rem;
+}
+.date {
+  font-size: 1.2rem;
+}
+
+.movements {
+  background-color: inherit;
+  /* min-height: 2rem; */
+  overflow: scroll;
+  grid-row: 2 / 5;
+}
+.movements__row {
+  /* width: 100%; */
+  margin-bottom: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2.25rem 4rem;
+}
+
+.purchase {
+  font-size: 1.2rem;
+  background-color: green;
+  height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  padding: 0px 10px;
+  border-radius: 10rem;
+}
+.purchase-type-deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.purchase-type-withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.sum-of-purchase {
+  font-size: 1.8rem;
+}
+.form {
+  border-radius: 10px;
+  padding: 3rem 8rem;
+}
+.transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+.request {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.form-heading {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+.input-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.input {
+  width: 12rem;
+  height: 3rem;
+  opacity: 50%;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 1.3s;
+}
+.input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.btn-form {
+  border: none;
+  border-radius: 1rem;
+  width: 6rem;
+  cursor: pointer;
+}
+.label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form--label-loan {
+  grid-row: 2;
+}
+.main-footer {
+  grid-column: 1/2;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+.summary-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+.summary-value {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+.summary-value--interest,
+.summary-value--in {
+  color: #66c873;
+}
+.summary-value-out {
+  color: #f5465d;
+}
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background-color: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.log-out {
+  grid-column: 2/ -1;
+  text-align: right;
+  padding: 1.6rem 0.3rem 2.5rem 0;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
